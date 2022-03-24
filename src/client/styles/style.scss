@@ -1,0 +1,145 @@
+body{
+    background: #fffff8;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    gap: 0.5em;
+    background: #fffff8;
+    /* color: rgb(124, 55, 55); */
+    font-size: 20px;
+}
+
+.holder-headline {
+    padding: 50px 0px 0px 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    text-decoration:underline 3px;
+    height: 20vh;
+    color: rgb(124, 55, 55);
+}
+
+.holder-trip{
+    display:flex;
+    background-color: #dfc39a;
+    padding: 10px;
+}
+
+.holder-entry{
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #fffff8;
+    color: black;
+    width: -webkit-fill-available;
+}
+
+#entryHolder{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+}
+
+#content{
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+#country{
+    padding-bottom: 10px;
+}
+
+#weather{
+    font-size: 15px;
+    color: rgb(39, 39, 39);
+}
+
+#weather-description{
+    font-size: 15px;
+    color: rgb(39, 39, 39);
+}
+
+#weather-icon{
+    display: flex;
+    padding: 20px 0px 0px 200px;
+}
+
+#img{
+    padding-top: 5px;
+    border-radius: 20px;
+}
+
+
+label{
+    display:flex;
+    font-size: 22px;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+    width: 30vh;
+}
+
+#location{
+    width: 180px;
+}
+
+#departing-date{
+    padding:1px 2px;
+    width: 180px;
+}
+
+input{
+    display:flex;
+    height: 30px;
+    background:rgba(59, 74, 107, .4);
+    color: rgb(71, 70, 70);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    background: #dfc39a;
+    color: rgb(124, 55, 55);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: rgb(124, 55, 55) solid 2px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+    &:hover{
+        background-color: rgb(124, 55, 55);
+        color: #fffff8;
+    }
+}
+
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(71, 70, 70); 
+    font-family: 'Courier New', Courier, monospace;
+
+} 
