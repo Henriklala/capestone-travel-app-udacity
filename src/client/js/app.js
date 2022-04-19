@@ -1,11 +1,11 @@
-//both modeules are needed for Jest fetch
-import fetch from 'node-fetch'
 import 'regenerator-runtime/runtime'
+
 const app = (event) => {
+  event.preventDefault()
   const newLocation = document.querySelector("#location").value;
   const date = daysUntill();
-
-    const updateUI = (res, date) =>{
+    //updating UI with the info we got from API stored in ProjectData
+    const updateUI = (res) =>{
       document.querySelector("#country").innerHTML = `${`${res.location.country}, ${res.location.city} is ${res.location.daysuntill} days away.`}`;
       document.querySelector("#weather").innerHTML = `${`The typical weather for then is: ${res.weather.temp}C°`}`;
       document.querySelector("#weather-description").innerHTML = `${`${res.weather.weather} througout the day.`}`;
@@ -44,6 +44,5 @@ const daysUntill = ()=>{
   return days;
 };
 
-export { daysUntill }
 export { app }
 export { postLocation }

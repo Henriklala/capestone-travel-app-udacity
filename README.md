@@ -1,19 +1,28 @@
-# Travel-App
+## Installation
 
-## Get started
- 1. Clone the repo
- 2. Start the server by running "node server.js" in the root of the project
- 3. Launch in your browser like so "localhost:3000
+1. Install npm or yarn
+```
+npm install or yarn install
+```
+2. Sign up for an API key at geonames.org, weatherbit.io and pixabay.com
 
-## Features
-* Asynchronous JavaScript
-* Web API 
-* Dynamically update UI
+3. Configure environment variables using dotenv package
+	1. Install the dotenv package
+	```
+	npm install dotenv or yarn add dotenv
+	```
+	2. Create a new `.env` file in the root of your project
+	3. Fill the `.env` file with your API key like this:
+	```
+	geonames_USERNAME=******************
+    weatherbit_KEY=******************
+    pixabay_KEY=******************
+	```
+4. Start the project
 
-## Technologies
-* HTML
-* CSS
-* JavaScript
+Command | Action
+:------------: | :-------------:
+`npm run build-prod` or `yarn build-prod`| Build project
+`npm start` or `yarn start` | Run project
 
-## Author
-Henrik Andersson
+5. Open browser at http://localhost:8088/
