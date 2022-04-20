@@ -18,11 +18,6 @@ let projectData = {
   weather: null,
 };
 
-const port = 8088;
-const server = app.listen(port, () =>
-  console.log(`Server successfully running on localhost:${port}`)
-);
-
 app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -91,3 +86,4 @@ app.post("/postLocation", (req, res) => {
         });
     });
 });
+module.exports = app;
